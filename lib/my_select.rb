@@ -4,5 +4,6 @@ def my_select(collection)
   while i < collection.length 
   if yield(collection[i]) == true 
     new_collect << collection[i]
+    i = i + 1
   end
 end
